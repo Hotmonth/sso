@@ -1,7 +1,14 @@
-package sso
+package main
+
+import (
+	"fmt"
+	"sso/internal/config"
+)
 
 func main() {
-	// TODO: Init config object
+	cfg := config.MustLoad()
+
+	fmt.Println(cfg)
 
 	// TODO: Init a logger (slog)
 
